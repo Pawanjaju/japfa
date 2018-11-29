@@ -151,61 +151,7 @@ $.fn.exists = function () {
         POTENZA.goToTop();
     });
 
-    /*=============== Image parallax ============== */
-    // if ($("#card").exists()) {
-    //   const move = (e) => {
-    //       const element = document.getElementById("card");
-    //       let distx = e.clientX;
-    //       let disty = e.clientY;
-    //       let data = element.getBoundingClientRect()
-    //       let {
-    //           x,
-    //           y,
-    //           width,
-    //           height
-    //       } = data;
-    //       let elemx = x + width / 2;
-    //       let elemy = y + height / 2;
-
-    //       let a = elemy - disty;
-    //       let b = distx - elemx;
-
-    //       element.setAttribute("style", `transform:perspective(500px) rotateX(${a/20}deg) rotateY(${b/20}deg) rotateZ(0deg)`);
-    //   }
-    //   document.onmousemove = move;
-    // }
-/*=============== ============== */
-// (function () {
-//   var delay = false;
-
-//   $(document).on('mousewheel DOMMouseScroll', function (event) {
-//     event.preventDefault();
-//     if (delay) return;
-
-//     delay = true;
-//     setTimeout(function () {
-//       delay = false
-//     }, 200)
-
-//     var wd = event.originalEvent.wheelDelta || -event.originalEvent.detail;
-
-//     var a = document.getElementsByTagName('section');
-//     if (wd < 0) {
-//       for (var i = 0; i < a.length; i++) {
-//         var t = a[i].getClientRects()[0].top;
-//         if (t >= 40) break;
-//       }
-//     } else {
-//       for (var i = a.length - 1; i >= 0; i--) {
-//         var t = a[i].getClientRects()[0].top;
-//         if (t < -20) break;
-//       }
-//     }
-//     $('html,body').animate({
-//       scrollTop: a[i].offsetTop
-//     });
-//   });
-// })();
+   
    // JavaScript for label effects only
    $(window).load(function () {
      $(".col-3 input").val("");
